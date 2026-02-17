@@ -18,6 +18,10 @@
 .font {
    font-family: "Titillium Web";
 }
+#text-space::placeholder{
+    padding: 8px;
+}
+
 </style>
 </head>
 <body>
@@ -164,6 +168,11 @@
         <p class="text-[#777777] leading-7 font-medium my-2.5">There are many variations of passages of Lorem Ipsum available.</p>
         <h5 class="font-bold leading-7">Learn More</h5>
     </div></div>
+<div class="mt-10">
+   
+    <h3 class="font-bold">Write a comment :</h3>
+    <textarea cols="40" rows="5" placeholder="Write here" class="my-2 border border-violet-800 rounded-xl" id="text-space"></textarea></div>
+<button id="buttonChange" class="text-white rounded-lg px-4 py-2 text-xl font-bold bg-linear-65 from-[#FF8938] to-[#FF0000] hover:text-black">Post comment</button>
 </section>
 
 <!-- Footer Section -->
@@ -218,5 +227,12 @@
     <p class="text-[#494949] text-center mt-[100px]">© 2027 UIDesign.to - All rights reserved.</p>
 </footer>
 
+<script>
+    document.getElementById('buttonChange')
+    .addEventListener('click', function(){
+        const faah = document.getElementById('text-space');
+        faah.value = '   Naziba Gu khay ' ;
+    })
+</script>
 </body>
 </html>
